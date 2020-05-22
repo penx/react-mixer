@@ -1,0 +1,9 @@
+{
+  "name": "react-mixer",
+  "version": "0.0.1",
+  "description": "React components to build an audio mixer",
+  "main": "index.js",
+  "author": "Alasdair McLeay",
+  "license": "MIT",
+  "repository": "git@github.com:penx/react-mixer.git"
+}
