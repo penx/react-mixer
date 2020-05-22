@@ -6,7 +6,9 @@
   "author": "Alasdair McLeay",
   "license": "MIT",
   "repository": "git@github.com:penx/react-mixer.git",
-  "dependencies": {},
+  "dependencies": {
+    "react-native-web": "^0.12.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@storybook/addon-actions": "^5.3.18",
