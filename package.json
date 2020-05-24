@@ -1,14 +1,11 @@
 {
-  "name": "react-mixer",
+  "name": "@react-mixer/core",
   "version": "0.0.1",
   "description": "React components to build an audio mixer",
   "main": "index.js",
   "author": "Alasdair McLeay",
   "license": "MIT",
   "repository": "git@github.com:penx/react-mixer.git",
-  "dependencies": {
-    "@react-native-community/slider": "^3.0.0-rc.2"
-  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@storybook/addon-actions": "^5.3.18",
