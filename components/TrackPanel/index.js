@@ -4,11 +4,11 @@ import { View } from "react-native";
 export const TrackPanel = ({ children }) => (
   <View
     style={{
-      height: 400,
+      height: 320,
       width: 60,
       backgroundColor: "#aaa",
       margin: 1,
-      position: 'relative',
+      position: "relative",
     }}
   >
     {children}
@@ -17,7 +17,7 @@ export const TrackPanel = ({ children }) => (
 
 const TOP_HEIGHT = 60;
 export const TrackPanelTop = ({ children }) => (
-  <View style={{ height: TOP_HEIGHT, top: 0, left: 0, position: 'absolute' }}>
+  <View style={{ height: TOP_HEIGHT, top: 0, left: 0, position: "absolute" }}>
     {children}
   </View>
 );
@@ -28,7 +28,7 @@ export const TrackPanelMiddle = ({ children }) => (
       height: MIDDLE_HEIGHT,
       top: TOP_HEIGHT,
       left: 0,
-      position: 'absolute',
+      position: "absolute",
     }}
   >
     {children}
@@ -41,7 +41,7 @@ export const TrackPanelBottom = ({ children }) => (
       height: BOTTOM_HEIGHT,
       top: TOP_HEIGHT + MIDDLE_HEIGHT,
       left: 0,
-      position: 'absolute',
+      position: "absolute",
     }}
   >
     {children}

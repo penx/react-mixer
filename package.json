@@ -12,11 +12,14 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
-    "react-native-web": "^0.12.2"
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-native": "^0.62.2",
+    "react-native-web": "^0.12.2",
+    "webpack": "4.43.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
