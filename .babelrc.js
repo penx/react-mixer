@@ -6,10 +6,10 @@ const presets = [
 ];
 
 const plugins =  [
-  "@babel/plugin-proposal-object-rest-spread",
-  "@babel/plugin-proposal-class-properties",
-  "@babel/plugin-transform-runtime",
-  "babel-plugin-transform-react-remove-prop-types"
+  // "@babel/plugin-proposal-object-rest-spread",
+  // "@babel/plugin-proposal-class-properties",
+  // "@babel/plugin-transform-runtime",
+  // "babel-plugin-transform-react-remove-prop-types"
 ];
 
 const ignore = [".spec.js", ".test.js", "-test.js", "/__tests__/"];
