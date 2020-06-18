@@ -13,7 +13,9 @@ export const Example = () => {
   const [vol2, setVol2] = useState(-32);
   return (
     <>
+      {vol1}
       <VolumeSlider value={vol1} onChange={setVol1} />
+      {vol2}
       <VolumeSlider value={vol2} onChange={setVol2} />
     </>
   );

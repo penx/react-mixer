@@ -6,8 +6,10 @@ import {
   TrackPanelBottom,
 } from "./components/TrackPanel";
 import { VolumeSlider } from "./components/VolumeSlider";
+import { Slider } from "./components/Slider";
 
 export {
+  Slider,
   Mixer,
   TrackPanel,
   TrackPanelTop,
