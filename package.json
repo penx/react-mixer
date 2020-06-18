@@ -2,11 +2,14 @@
   "name": "@react-mixer/core",
   "version": "0.0.1",
   "description": "React components to build an audio mixer",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
   "author": "Alasdair McLeay",
   "license": "MIT",
   "repository": "git@github.com:penx/react-mixer.git",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
@@ -14,14 +17,24 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "cross-env": "^7.0.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-native": "^0.62.2",
     "react-native-web": "^0.12.2",
+    "rimraf": "^3.0.2",
     "webpack": "4.43.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "watch": "yarn build:lib --watch & yarn build:es --watch",
+    "build": "yarn build:lib && yarn build:es",
+    "build:lib": "rimraf lib ./lib && babel src -d lib --source-maps",
+    "build:es": "rimraf es ./es && cross-env BABEL_ENV=es babel src -d es --source-maps"
+  },
+  "dependencies": {
+    "styled-components": "^5.1.1"
   }
 }
